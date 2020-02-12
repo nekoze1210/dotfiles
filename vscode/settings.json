@@ -1,0 +1,34 @@
+{
+  "workbench.colorTheme": "Nord",
+  "workbench.startupEditor": "newUntitledFile",
+  "atomKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  // "editor.formatOnPaste": true,
+  // "editor.formatOnSave": true,
+  // フォント サイズをピクセル単位で制御します。
+  "editor.fontSize": 13,
+  "editor.fontFamily": "'Fira Code'",
+  "editor.fontLigatures": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.tabSize": 2,
+  "window.zoomLevel": 0,
+  // "prettier.singleQuote": true,
+  // "prettier.semi": false,
+  "[go]": {
+    "editor.tabSize": 4
+  },
+  "breadcrumbs.enabled": true,
+  "workbench.editor.enablePreview": false,
+  "markdown-table-formatter.markdownGrammarScopes": [
+    "markdown",
+    "plaintext"
+  ],
+  "editor.renderWhitespace": "boundary",
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "afterDelay",
+  "files.associations": {
+      "*.gs": "javascript"
+  },
+  "go.gopath" : "/Users/nzk180824d/go/1.13.4"
+}

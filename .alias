@@ -1,0 +1,44 @@
+# System
+alias ls='exa -ahiluU --time-style=long-iso'
+alias ll='exa -l --git --time-style=long-iso'
+alias la='exa -ahiluU --git --time-style=long-iso'
+
+# Directory alias
+alias lab='cd ~/Laboratory'
+
+# Ruby/Ruby on Rails
+RUBY_CONFIGURE_OPTS="--with-readline-dir=$(brew --prefix readline)"
+alias be='bundle exec'
+alias rs='bundle exec rails s'
+alias rsp='bundle exec rspec'
+alias rc='bundle exec rails c'
+alias rgc='rails g controller'
+alias rgm='rails g model'
+alias rgmi='rails g migration'
+alias rdc='bundle exec rake db:create'
+alias rdm='bundle exec rake db:migrate'
+alias rds='bundle exec rake db:seed'
+alias rdd='bundle exec rake db:drop'
+alias rr='bundle exec rake routes'
+alias bi='bundle install'
+alias bu='bundle update'
+alias conslm='for i in app/views/**/*.erb; do erb2slim $i ${i%erb}slim && rm $i; done'
+alias cop='rubocop'
+alias spec='bundle exec rspec'
+
+# git
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gd="git diff"
+alias chk='git checkout'
+alias cdev='git checkout -b develop origin/develop'
+alias g='git'
+alias co='checkout'
+alias gco='git checkout'
+alias gp='git pull'
+
+# docker
+alias dc='docker-compose'
+alias de='docker-compose exec'
+
