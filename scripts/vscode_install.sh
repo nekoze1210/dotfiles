@@ -14,7 +14,7 @@ rm "$VSCODE_SETTING_DIR/keybindings.json"
 ln -s "$SCRIPT_DIR/keybindings.json" "${VSCODE_SETTING_DIR}/keybindings.json"
 
 # install extention
-cat extensions | while read line
+cat ../vscode/extensions | while read line
 do
  code --install-extension $line
 done
