@@ -1,9 +1,13 @@
+#!/bin/sh
+
 DOTPATH=~/.dotfiles
+dotfiles=".??*"
+for f in $dotfiles; do
+  if [ -f "$f"=".git" ]
+  then
+    continue
+  fi
 
-for f in .??*
-do
-    [ "$f"=".git" ] && continue
-
-    ln --snfv "$DOTPATH"/"$f" "$HOME"/"$f"
+  ln --snfv "$DOTPATH"/"$f" "$HOME"/"$f"
 done
 
