@@ -1,6 +1,6 @@
 #!/bin/sh
 
-SCRIPT_DIR=$(cd $(dirname $0) && pwd)
+SCRIPT_DIR=$(cd ../vscode && pwd)
 VSCODE_SETTING_DIR="$HOME/Library/Application Support/Code/User"
 if [ ! -e "$VSCODE_SETTING_DIR" ]; then
     echo "Please install VSCode on your Mac"
