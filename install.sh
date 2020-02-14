@@ -8,6 +8,6 @@ for f in $dotfiles; do
     continue
   fi
 
-  ln --snfv "$DOTPATH"/"$f" "$HOME"/"$f"
+  ln -snfv "$DOTPATH"/"$f" "$HOME"/"$f"
 done
 
