@@ -1,13 +1,13 @@
-#!/bin/sh
+#!/bin/bash
 
 DOTPATH=~/.dotfiles
 dotfiles=".??*"
 for f in $dotfiles; do
-  if [ -f "$f"=".git" ]
-  then
-    continue
-  fi
-
+  [ "$f" = ".git" ] && continue
+  [ "$f" = ".gitignore" ] && continue
+  [ "$f" = ".gitconfig.local.template" ] && continue
+  [ "$f" = ".require_oh-my-zsh" ] && continue
+  [ "$f" = ".gitmodules" ] && continue
+  
   ln -snfv "$DOTPATH"/"$f" "$HOME"/"$f"
 done
-

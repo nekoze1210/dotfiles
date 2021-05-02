@@ -209,48 +209,30 @@ nmap <DOWN> gj
 vmap <UP> gk
 vmap <DOWN> gj
 
-
 "------Vundle設定------
 set nocompatible               " be iMproved
 filetype off                   " required!
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 " My Bundles here:
-Plugin 'scrooloose/nerdtree'
-" カラースキームrailscasts用設定
-Plugin 'KeitaNakamura/railscasts.vim'
-colorscheme railscasts
+Plugin 'preservim/nerdtree'
+Plugin 'jpo/vim-railscasts-theme'
 
 " lightline.vimの設定
 Bundle 'itchyny/lightline.vim'
 set laststatus=2
 
 " original repos on github
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'tpope/vim-rails.git'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'tpope/vim-rails.git'
 " vim-scripts repos
-Bundle 'L9'
-Bundle 'FuzzyFinder'
-" non github repos
-Bundle 'vim-twig'
-Bundle'fatih/vim-go'
+Plugin 'L9'
+Plugin 'FuzzyFinder'
+Plugin 'fatih/vim-go'
 
-
-
-" ...
 filetype plugin indent on     " required!
-"
-" Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-"
-" see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
-
