@@ -26,19 +26,38 @@ alias conslm='for i in app/views/**/*.erb; do erb2slim $i ${i%erb}slim && rm $i;
 alias cop='rubocop'
 alias spec='bundle exec rspec'
 
+# node.js
+alias yi='yarn'
+alias yd='yarn dev'
+
 # git
 alias gs="git status"
 alias ga="git add"
 alias gc="git commit"
 alias gd="git diff"
 alias chk='git checkout'
+alias sw='git switch'
 alias cdev='git checkout -b develop origin/develop'
 alias g='git'
 alias co='checkout'
 alias gco='git checkout'
 alias gp='git pull'
+alias grh='git reset HEAD'
+alias grsh='git reset HEAD'
 
 # docker
 alias dc='docker-compose'
 alias de='docker-compose exec'
 
+# arch
+alias a86='arch -x86_64'
+alias am1='arch -x86_64'
+
+# GCP
+alias gab='gcloud app browse'
+alias gpl='gcloud projects list'
+
+# Firebase
+alias fblogin='firebase login'
+alias fblogout='firebase logout'
+alias fbpl='firebase projects:list'
