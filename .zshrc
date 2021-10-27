@@ -7,6 +7,7 @@ source $HOME/.path
 
 if [ -f /opt/homebrew/opt/asdf/asdf.sh ]; then
     . /opt/homebrew/opt/asdf/asdf.sh
+    . /opt/homebrew/opt/asdf/libexec/asdf.sh
 fi 
 
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
