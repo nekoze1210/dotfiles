@@ -13,6 +13,6 @@ which brew >/dev/null 2>&1 && brew doctor
 which brew >/dev/null 2>&1 && brew update --verbose
 
 echo "run homebrew bundle"
-brew bundle -v --file=Brewfile
+brew bundle -v --file=Brewfile --no-lock
 
 echo "all done."
