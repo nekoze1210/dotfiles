@@ -4,6 +4,19 @@ echo "keyRepeat settings"
 defaults write -g InitialKeyRepeat -int 11
 defaults write -g KeyRepeat -int 1
 
+echo "trackpad settings"
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true && \
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+defaults write -g com.apple.trackpad.scaling -int 3
+
+echo "Dock settings"
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock tilesize -int 40
+defaults write com.apple.dock mineffect scale
+
+echo "Clock Settings"
+defaults write com.apple.menuextra.clock ShowSeconds -bool true
+
 echo "install xcode-select"
 xcode-select -v >/dev/null 2>&1 || xcode-select --install
 
