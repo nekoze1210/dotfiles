@@ -4,8 +4,9 @@ tap "homebrew/core"
 brew "act"
 brew "webp"
 brew "asdf"
-brew "bat"
 brew "python@3.9"
+brew "awscli"
+brew "bat"
 brew "glib"
 brew "exa"
 brew "guile"
@@ -35,7 +36,10 @@ brew "tig"
 brew "tree"
 brew "yamllint"
 cask "adoptopenjdk"
+cask "google-japanese-ime"
+cask "karabiner-elements"
 cask "ngrok"
+mas "Bear", id: 1091189122
 mas "Craft", id: 1487937127
 mas "Developer", id: 640199958
 mas "GarageBand", id: 682658836
@@ -48,6 +52,7 @@ mas "Magnet", id: 441258766
 mas "Messenger", id: 1480068668
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Simplenote", id: 692867256
 mas "Slack", id: 803453959
 mas "Stay", id: 435410196
 mas "TweetDeck", id: 485812721
