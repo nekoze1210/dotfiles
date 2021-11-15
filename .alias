@@ -51,7 +51,7 @@ alias de='docker-compose exec'
 
 # arch
 alias a86='arch -x86_64'
-alias am1='arch -x86_64'
+alias am1='arch -arm64e'
 
 # GCP
 alias gab='gcloud app browse'
