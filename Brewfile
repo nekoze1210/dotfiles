@@ -18,6 +18,7 @@ brew "libass"
 brew "srt"
 brew "ffmpeg"
 brew "gawk"
+brew "gh"
 brew "git"
 brew "gnupg"
 brew "pango"
@@ -39,13 +40,16 @@ cask "1password"
 cask "adoptopenjdk"
 cask "alfred"
 cask "clipy"
+cask "dash"
 cask "discord"
 cask "docker"
+cask "figma"
 cask "google-chrome"
 cask "google-japanese-ime"
 cask "iterm2"
 cask "jetbrains-toolbox"
 cask "karabiner-elements"
+cask "miro"
 cask "ngrok"
 cask "notion"
 cask "visual-studio-code"
@@ -62,6 +66,7 @@ mas "Magnet", id: 441258766
 mas "Messenger", id: 1480068668
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Prime Video", id: 545519333
 mas "Simplenote", id: 692867256
 mas "Slack", id: 803453959
 mas "Stay", id: 435410196
