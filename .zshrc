@@ -28,9 +28,14 @@ zinit light-mode for \
     zdharma-continuum/z-a-patch-dl \
     zdharma-continuum/z-a-bin-gem-node
 
+zinit wait lucid is-snippet for \
+    OMZL::git.zsh \
+    OMZP::git
+
 zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
 zinit light sindresorhus/pure
 zinit light zsh-users/zsh-completions
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light paulirish/git-open
 zinit light zsh-users/zsh-autosuggestions
+zinit light lukechilds/zsh-better-npm-completion
