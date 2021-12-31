@@ -44,6 +44,7 @@ alias gco='git checkout'
 alias gp='git pull'
 alias grh='git reset HEAD'
 alias grsh='git reset HEAD'
+alias gcm="gitmoji -c"
 
 # docker
 alias dc='docker-compose'
