@@ -41,3 +41,15 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light paulirish/git-open
 zinit light zsh-users/zsh-autosuggestions
 zinit light lukechilds/zsh-better-npm-completion
+zinit wait silent lucid atclone"zstyle ':completion:*:*:git:*' script git-completion.bash" atpull"%atclone" for \
+  "https://github.com/git/git/blob/master/contrib/completion/git-completion.bash"
+zinit wait lucid as"completion" atload"zicompinit; zicdreplay" mv"git-completion.zsh -> _git" for \
+  "https://github.com/git/git/blob/master/contrib/completion/git-completion.zsh"
+
+# Bun
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+export BUN_INSTALL="$HOME/.bun"
+
+export LDFLAGS="-L/opt/homebrew/opt/zlib/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/zlib/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/zlib/lib/pkgconfig"
