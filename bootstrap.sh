@@ -8,6 +8,7 @@ echo "trackpad settings"
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true && \
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
 defaults write -g com.apple.trackpad.scaling -int 3
+defaults write -g AppleEnableSwipeNavigateWithScrolls 1
 
 echo "Dock settings"
 defaults write com.apple.dock autohide -bool true
@@ -37,6 +38,9 @@ brew bundle -v --file=Brewfile --no-lock
 
 echo "install vundle"
 [ -d ~/.dotfiles/.vim/bundle/Vundle.vim ]  || git clone https://github.com/VundleVim/Vundle.vim.git ~/.dotfiles/.vim/bundle/Vundle.vim
+
+echo "install AstroNvim"
+[ -d ~/.config/nvim/ ] || git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 
 echo "import Karabiner-Elements Settings"
 brew info karabiner-elements >/dev/null 2>&1 && cp "$(pwd)/karabiner/config.json" ~/.config/karabiner/karabiner.json
