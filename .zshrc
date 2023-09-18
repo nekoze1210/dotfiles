@@ -34,8 +34,6 @@ zinit wait lucid is-snippet for \
     OMZL::git.zsh \
     OMZP::git
 
-zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
-zinit light sindresorhus/pure
 zinit light zsh-users/zsh-completions
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light paulirish/git-open
@@ -53,3 +51,5 @@ export BUN_INSTALL="$HOME/.bun"
 export LDFLAGS="-L/opt/homebrew/opt/zlib/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/zlib/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/zlib/lib/pkgconfig"
+
+eval "$(starship init zsh)"
