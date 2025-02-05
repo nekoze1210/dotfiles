@@ -5,13 +5,6 @@ source $HOME/.alias
 source $HOME/.setopt
 source $HOME/.path
 
-if [ -f /opt/homebrew/opt/asdf/asdf.sh ]; then
-    . /opt/homebrew/opt/asdf/asdf.sh
-    . /opt/homebrew/opt/asdf/libexec/asdf.sh
-    GOV=$(asdf where golang)
-    export GOROOT=$GOV/go
-fi
-
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
     print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
     command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
@@ -34,11 +27,11 @@ zinit wait lucid is-snippet for \
     OMZL::git.zsh \
     OMZP::git
 
+zinit ice blockf
 zinit light zsh-users/zsh-completions
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light paulirish/git-open
 zinit light zsh-users/zsh-autosuggestions
-zinit light lukechilds/zsh-better-npm-completion
 zinit wait silent lucid atclone"zstyle ':completion:*:*:git:*' script git-completion.bash" atpull"%atclone" for \
   "https://github.com/git/git/blob/master/contrib/completion/git-completion.bash"
 zinit wait lucid as"completion" atload"zicompinit; zicdreplay" mv"git-completion.zsh -> _git" for \
@@ -51,5 +44,15 @@ export BUN_INSTALL="$HOME/.bun"
 export LDFLAGS="-L/opt/homebrew/opt/zlib/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/zlib/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/zlib/lib/pkgconfig"
+export GOPATH=$(go env GOPATH)
+export PATH=$PATH:$GOPATH/bin
+
+[ -s "/opt/homebrew/bin/mise" ] && eval "$(mise activate zsh --shims)"
 
 eval "$(starship init zsh)"
+export GPG_TTY=$TTY
+
+eval "$(direnv hook zsh)"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/nekoze/.lmstudio/bin"

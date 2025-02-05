@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/nekoze/.config/git'
+let g:netrw_dirhist_2='/Users/nekoze/projects/abel/equtum-management-api/schema'
 let g:netrw_dirhist_1='/Users/nekoze/projects/photo-widget-web/firebase'
