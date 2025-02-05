@@ -3,7 +3,9 @@ if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-clou
 if [ -f "$HOME/.deno/bin" ]; then . "$HOME/.deno/bin"; fi
 if [ -f "$HOME/.bun/bin" ]; then . "$HOME/.bun/"; fi
 if [ -f "$HOME/.foundry/bin" ]; then . "$HOME/.foundry/bin"; fi
+if [ -f "$HOME/Library/Android/sdk/platform-tools" ]; then . "$HOME/Library/Android/sdk/platform-tools"; fi
 
 export MINT_PATH="$HOME/.mint"
 export MINT_LINK_PATH="$MINT_PATH/bin"
+export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools
 export PATH=$HOME/bin:$PATH
