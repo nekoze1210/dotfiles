@@ -37,15 +37,9 @@ zinit wait silent lucid atclone"zstyle ':completion:*:*:git:*' script git-comple
 zinit wait lucid as"completion" atload"zicompinit; zicdreplay" mv"git-completion.zsh -> _git" for \
   "https://github.com/git/git/blob/master/contrib/completion/git-completion.zsh"
 
-# Bun
-[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
-export BUN_INSTALL="$HOME/.bun"
-
 export LDFLAGS="-L/opt/homebrew/opt/zlib/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/zlib/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/zlib/lib/pkgconfig"
-export GOPATH=$(go env GOPATH)
-export PATH=$PATH:$GOPATH/bin
 
 [ -s "/opt/homebrew/bin/mise" ] && eval "$(mise activate zsh --shims)"
 
@@ -53,6 +47,3 @@ eval "$(starship init zsh)"
 export GPG_TTY=$TTY
 
 eval "$(direnv hook zsh)"
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/nekoze/.lmstudio/bin"
