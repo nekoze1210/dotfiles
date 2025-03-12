@@ -1,7 +1,8 @@
 # System
-alias ls='eza -ahiluU --time-style=long-iso'
-alias ll='eza -l --git --time-style=long-iso'
-alias la='eza -ahiluU --git --time-style=long-iso'
+alias ls='eza --icons -ahiluU --time-style=long-iso'
+alias ll='eza --icons -l --git --time-style=long-iso'
+alias la='eza --icons -ahiluU --git --time-style=long-iso'
+
 
 # Directory alias
 alias lab='cd ~/Laboratory'
