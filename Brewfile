@@ -3,7 +3,7 @@ tap "bufbuild/buf"
 tap "grishka/grishka"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
+tap "olets/tap"
 tap "oven-sh/bun"
 tap "stripe/stripe-cli"
 brew "act"
@@ -19,7 +19,7 @@ brew "boost"
 brew "glib"
 brew "cocoapods"
 brew "direnv"
-brew "docker", link: false
+brew "docker"
 brew "eksctl"
 brew "eza"
 brew "unbound"
@@ -30,6 +30,7 @@ brew "pango"
 brew "srt"
 brew "ffmpeg"
 brew "flyctl"
+brew "fzf"
 brew "gawk"
 brew "gcc"
 brew "gh"
@@ -48,6 +49,7 @@ brew "llvm"
 brew "mas"
 brew "mint"
 brew "mise"
+brew "neofetch"
 brew "neovim"
 brew "nghttp2"
 brew "nodenv"
@@ -58,6 +60,7 @@ brew "python-tk@3.10"
 brew "python@3.9"
 brew "ruby-build"
 brew "rbenv"
+brew "sheldon"
 brew "siege"
 brew "sops"
 brew "starship"
@@ -76,9 +79,9 @@ brew "hashicorp/tap/terraform"
 brew "oven-sh/bun/bun"
 brew "stripe/stripe-cli/stripe"
 cask "1password"
-cask "adoptopenjdk"
 cask "alfred"
 cask "alt-tab"
+cask "amazon-q"
 cask "blackhole-16ch"
 cask "blender"
 cask "chatgpt"
@@ -93,7 +96,6 @@ cask "font-fira-code-nerd-font"
 cask "font-hackgen"
 cask "font-hackgen-nerd"
 cask "font-iosevka"
-cask "ganache"
 cask "ghostty"
 cask "google-chrome"
 cask "google-cloud-sdk"
@@ -107,6 +109,7 @@ cask "neardrop"
 cask "ngrok"
 cask "notion"
 cask "obs"
+cask "obsidian"
 cask "raspberry-pi-imager"
 cask "raycast"
 cask "twitch"
@@ -116,9 +119,10 @@ mas "Developer", id: 640199958
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
+mas "Kindle", id: 302584613
+mas "LadioCast", id: 411213048
 mas "LINE", id: 539883307
 mas "LINE WORKS", id: 1029784963
-mas "MacDroid", id: 1476545828
 mas "Magnet", id: 441258766
 mas "Messenger", id: 1480068668
 mas "Numbers", id: 409203825
@@ -126,10 +130,12 @@ mas "Pages", id: 409201541
 mas "Slack", id: 803453959
 mas "Stay", id: 435410196
 mas "TestFlight", id: 899247664
-mas "WaveBar", id: 6450398808
+mas "The Unarchiver", id: 425424353
+mas "TweetDeck", id: 485812721
 mas "Xcode", id: 497799835
 vscode "adpyke.vscode-sql-formatter"
 vscode "alexdima.vscode-lcov"
+vscode "amazonwebservices.codewhisperer-for-command-line-companion"
 vscode "atefth.ruby-on-rails-snippets"
 vscode "banxi.go-snippets"
 vscode "bierner.markdown-emoji"
