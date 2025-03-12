@@ -112,14 +112,10 @@ cask "raycast"
 cask "twitch"
 cask "visual-studio-code"
 cask "wireshark"
-mas "Bear", id: 1091189122
-mas "Craft", id: 1487937127
 mas "Developer", id: 640199958
-mas "djay Pro AI", id: 450527929
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
-mas "Kindle Classic", id: 405399194
 mas "LINE", id: 539883307
 mas "LINE WORKS", id: 1029784963
 mas "MacDroid", id: 1476545828
@@ -127,14 +123,9 @@ mas "Magnet", id: 441258766
 mas "Messenger", id: 1480068668
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Prime Video", id: 545519333
-mas "Simplenote", id: 692867256
 mas "Slack", id: 803453959
 mas "Stay", id: 435410196
 mas "TestFlight", id: 899247664
-mas "The Unarchiver", id: 425424353
-mas "TweetDeck", id: 485812721
-mas "Unsplash Wallpapers", id: 1284863847
 mas "WaveBar", id: 6450398808
 mas "Xcode", id: 497799835
 vscode "adpyke.vscode-sql-formatter"
