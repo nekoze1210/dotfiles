@@ -37,9 +37,6 @@ github = 'zsh-users/zsh-syntax-highlighting'
 github = "zsh-users/zsh-autosuggestions"
 use = ["{{ name }}.zsh"]
 
-[plugins.git-open]
-github = "paulirish/git-open"
-
 [plugins.ni]
 github = 'azu/ni.zsh'
 
