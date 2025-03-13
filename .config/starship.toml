@@ -5,8 +5,9 @@ add_newline = true
 scan_timeout = 10
 
 [character]
-success_symbol = "[▶](bold green)"
-error_symbol = "[▶](bold red)"
+success_symbol = "[[󰄛](green) ❯](peach)"
+error_symbol = "[[󰄛](red) ❯](peach)"
+vimcmd_symbol = "[󰄛 ❮](subtext1)" # For use with zsh-vi-mode
 
 [battery]
 full_symbol = "🔋"
@@ -24,19 +25,18 @@ format = "[](fg:#232526 bg:none)[$branch]($style)[](fg:#232526 bg:#232526)
 style = "fg:#edeff0 bg:#232526"
 
 [git_status]
-format="[](fg:#232526 bg:none)[$all_status$ahead_behind]($style)[](fg:#232526 bg:#232526)[](fg:#67afc1 bg:#232526)[](fg:#232526 bg:#67afc1)[](fg:#67afc1 bg:none) "
-style = "fg:#edeff0 bg:#232526"
-conflicted = "="
-ahead =	"⇡${count}"
-behind = "⇣${count}"
-diverged = "⇕⇡${ahead_count}⇣${behind_count}"
-up_to_date = ""
-untracked = "?${count}"
-stashed = ""
-modified = "!${count}"
-staged = "+${count}"
-renamed = "»${count}"
-deleted = "${count}"
+format = '$all_status$ahead_behind '
+ahead = '[⬆](bold purple) '
+behind = '[⬇](bold purple) '
+staged = '[✚](green) '
+deleted = '[✖](red) '
+renamed = '[➜](purple) '
+stashed = '[✭](cyan) '
+untracked = '[◼](white) '
+modified = '[✱](blue) '
+conflicted = '[═](yellow) '
+diverged = '⇕ '
+up_to_date = ''
 
 [git_commit]
 format = "[\\($hash\\)]($style) [\\($tag\\)]($style)"
@@ -62,6 +62,7 @@ disabled = false
 format = "via [🐋 $context](blue bold)"
 
 [nodejs]
+disabled = true
 format = "[⬢ $version](bold green) "
 
 [golang]
