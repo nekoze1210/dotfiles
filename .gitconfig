@@ -2,3 +2,6 @@
 	insteadOf = https://github.com/
 [push]
 	autoSetupRemote = true
+[user]
+	name = nekoze1210
+	email = 14988862+nekoze1210@users.noreply.github.com
