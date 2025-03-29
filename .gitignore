@@ -2,3 +2,4 @@
 .DS_Store
 .zsh_history
 .node_repl_history
+.tig_history
