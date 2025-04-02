@@ -39,3 +39,5 @@ alias gpl='gcloud projects list'
 alias fblogin='firebase login'
 alias fblogout='firebase logout'
 alias fbpl='firebase projects:list'
+
+alias code="cursor"
