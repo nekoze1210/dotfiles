@@ -50,7 +50,6 @@ brew "golangci-lint"
 brew "graphviz"
 brew "guile"
 brew "httpstat"
-brew "hub"
 brew "jq"
 brew "k6"
 brew "ki"
@@ -98,7 +97,6 @@ cask "alt-tab"
 cask "blackhole-16ch"
 cask "blender"
 cask "chatgpt"
-cask "clipy"
 cask "codex"
 cask "cursor"
 cask "dash"
@@ -127,7 +125,6 @@ cask "obs"
 cask "obsidian"
 cask "raspberry-pi-imager"
 cask "raycast"
-cask "twitch"
 cask "visual-studio-code"
 cask "wireshark-app"
 mas "1Password for Safari", id: 1569813296
@@ -141,7 +138,6 @@ mas "Kindle", id: 302584613
 mas "LadioCast", id: 411213048
 mas "LINE", id: 539883307
 mas "Magnet", id: 441258766
-mas "Numbers", id: 361304891
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Slack", id: 803453959
@@ -151,7 +147,6 @@ mas "Transporter", id: 1450874784
 mas "Xcode", id: 497799835
 vscode "adpyke.vscode-sql-formatter"
 vscode "alexdima.vscode-lcov"
-vscode "amazonwebservices.codewhisperer-for-command-line-companion"
 vscode "anthropic.claude-code"
 vscode "atefth.ruby-on-rails-snippets"
 vscode "banxi.go-snippets"
