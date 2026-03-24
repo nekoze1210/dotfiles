@@ -1,6 +1,20 @@
 #!/bin/bash
 
 DOTPATH="$HOME/.dotfiles"
+GITHUB_URL="https://github.com/nekoze1210/dotfiles.git"
+
+# Clone the repository if it doesn't exist
+if [ ! -d "$DOTPATH" ]; then
+  echo "Cloning dotfiles repository..."
+  if command -v git &>/dev/null; then
+    git clone "$GITHUB_URL" "$DOTPATH"
+  else
+    echo "Error: git is not installed. Please install git first." >&2
+    exit 1
+  fi
+fi
+
+cd "$DOTPATH" || exit 1
 
 # Link dotfiles directly under the home directory
 dotfiles="$DOTPATH/.??*"
