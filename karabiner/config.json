@@ -207,6 +207,23 @@
                             "to": [{ "key_code": "left_control" }]
                         }
                     ]
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 52957,
+                        "vendor_id": 7847
+                    },
+                    "manipulate_caps_lock_led": false
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": true,
+                        "product_id": 52957,
+                        "vendor_id": 7847
+                    },
+                    "ignore": false
                 }
             ],
             "name": "Default profile",
