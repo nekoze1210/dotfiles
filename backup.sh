@@ -1,5 +1,5 @@
 #!/bin/bash
-brew bundle dump -f --no-lock --file ./Brewfile
+brew bundle dump -f --file ./Brewfile
 echo "homebrew backup completed"
 
 cp ~/.config/karabiner/karabiner.json ./karabiner/config.json
